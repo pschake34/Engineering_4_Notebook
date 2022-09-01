@@ -57,6 +57,12 @@ Your readme will have various images and gifs on it. Upload a test image and tes
 
 ### Test Link
 
+[Hyperlink text](rasperry-pi/temp.py)
+
 ### Test Image
 
+![MATT!](images/Matt.jpg)
+
 ### Test GIF
+
+![Cheers!](images/smiling_leo_perfect.gif)
