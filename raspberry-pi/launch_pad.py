@@ -9,6 +9,10 @@ led_red = digitalio.DigitalInOut(board.GP13)
 led_green = digitalio.DigitalInOut(board.GP18)
 led_red.direction = digitalio.Direction.OUTPUT
 led_green.direction = digitalio.Direction.OUTPUT
+button = digitalio.DigitalInOut(board.GP16)
+button.direction = digitalio.Direction.INPUT
+button.pull = digitalio.Pull.UP
+button_prev = button.value
 
 def countdown(x):
     print("Starting Countdown...")
@@ -19,8 +23,21 @@ def countdown(x):
         time.sleep(.5)
         led_red.value = False
         time.sleep(.5)
-    print("Liftoff!")
+        if button.value:
+            button_prev = button.value
+        if not button.value and button_prev:
+            print("Aborting...")
+            led_red.value = False
+            led_green.value = False
+            button_prev = button.value
+            return
     led_green.value = True
-    time.sleep(10)
+    print("Liftoff!")
 
-countdown(10)
+while True:
+    if button.value:
+        button_prev = button.value
+    if not button.value and button_prev:
+        led_green.value = False
+        button_prev = button.value
+        countdown(10)
