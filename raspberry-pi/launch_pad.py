@@ -19,18 +19,27 @@ pwm_servo = pwmio.PWMOut(board.GP0, duty_cycle=2 ** 15, frequency=50)
 servo1 = servo.Servo(pwm_servo, min_pulse=500, max_pulse=2500)
 servo1.angle = 0
 
-blink_duration = 0.5
-
 def countdown(x):
     print("Starting Countdown...")
+    BLINK_DURATION = 0.5
+    COUNT_DURATION = 1
+    LAST_COUNT = time.monotonic()
+    LAST_BLINK_TIME = time.monotonic()
     while x > 0:
         now = time.monotonic()
-        print(f"{x} seconds left...")
-        x -= 1
-        led_red.value = True
-        time.sleep(.5)
-        led_red.value = False
-        time.sleep(.5)
+        button_prev = False
+        if now >= LAST_COUNT + COUNT_DURATION:
+            x -= 1
+            print(f"{x} seconds left...")
+            LAST_COUNT = now
+        if not led_red.value:
+            if now >= LAST_BLINK_TIME + BLINK_DURATION:
+                led_red.value = True
+                LAST_BLINK_TIME = now
+        elif led_red.value:
+            if now >= LAST_BLINK_TIME + BLINK_DURATION:
+                led_red.value = False
+                LAST_BLINK_TIME = now
         if button.value:
             button_prev = button.value
         if not button.value and button_prev:
@@ -39,7 +48,6 @@ def countdown(x):
             led_green.value = False
             button_prev = button.value
             return
-        if x <= 3:
     led_green.value = True
     print("Liftoff!")
 
