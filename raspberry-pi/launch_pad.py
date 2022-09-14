@@ -23,23 +23,28 @@ def countdown(x):
     print("Starting Countdown...")
     BLINK_DURATION = 0.5
     COUNT_DURATION = 1
-    LAST_COUNT = time.monotonic()
+    LAST_COUNT = time.monotonic() - COUNT_DURATION
     LAST_BLINK_TIME = time.monotonic()
-    while x > 0:
+    SERVO_CHANGE = 1.23
+    button_prev = False
+    servo1.angle = 0
+    while x >= 0:
         now = time.monotonic()
-        button_prev = False
-        if now >= LAST_COUNT + COUNT_DURATION:
-            x -= 1
+        if now >= LAST_COUNT + COUNT_DURATION and x > 0:
             print(f"{x} seconds left...")
+            x -= 1
+            led_red.value = True
             LAST_COUNT = now
-        if not led_red.value:
-            if now >= LAST_BLINK_TIME + BLINK_DURATION:
-                led_red.value = True
-                LAST_BLINK_TIME = now
-        elif led_red.value:
+            LAST_BLINK_TIME = now
+        elif now >= LAST_COUNT + COUNT_DURATION and x == 0:
+            x -= 1
+        if led_red.value:
             if now >= LAST_BLINK_TIME + BLINK_DURATION:
                 led_red.value = False
                 LAST_BLINK_TIME = now
+        if x < 3:
+            if servo1.angle < 180 - SERVO_CHANGE:
+                servo1.angle += SERVO_CHANGE
         if button.value:
             button_prev = button.value
         if not button.value and button_prev:
@@ -49,12 +54,8 @@ def countdown(x):
             button_prev = button.value
             return
     led_green.value = True
+    led_red.value = False
     print("Liftoff!")
-
-def servo_thread():
-    for a in range(180):
-        servo1.angle = a
-        time.sleep(0.1)
 
 while True:
     if button.value:
