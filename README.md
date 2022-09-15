@@ -36,3 +36,76 @@ N/A
 
 ### Reflection
 
+This was the first assignment of the year, and I encoutered no difficulties making it work. A simple while loop counting from 10 to zero was all that was needed. One handy trick I learned to format strings was putting an f before the string: ```f"String to format: {x}"``` Rather than using ```"{}".format(x)``` to put a variable in a string.
+
+<br>
+
+## Launch Pad Part 2
+
+### Assignment Description
+
+The second step in the launch pad was to get LEDs blinking during the countdown. A red LED blinks every second during the countdown, and then a green LED turns on at launch. 
+
+### Evidence
+
+<img src="videos/Launch%20Pad/part2.gif" height=500px>
+
+### Wiring
+
+<img src="images/launch_pad_part2.png" height=300px>
+
+### Code
+
+[Link to code](/raspberry-pi/launch_pad_pt2.py)
+
+### Reflection
+
+
+
+<br>
+
+## Launch Pad Part 3
+
+### Assignment Description
+
+
+### Evidence
+
+<img src="videos/Launch%20Pad/part3.gif" height=500px>
+
+### Wiring
+
+
+
+### Code
+
+[Link to code](/raspberry-pi/launch_pad_pt3.py)
+
+### Reflection
+
+
+
+<br>
+
+## Launch Pad Part 4
+
+### Assignment Description
+
+
+### Evidence
+
+<img src="videos/Launch%20Pad/part4.gif" height=500px>
+
+### Wiring
+
+
+
+### Code
+
+[Link to code](/raspberry-pi/launch_pad_pt4.py)
+
+### Reflection
+
+
+
+<br>
