@@ -11,7 +11,7 @@ led_green = digitalio.DigitalInOut(board.GP18)
 led_red.direction = digitalio.Direction.OUTPUT
 led_green.direction = digitalio.Direction.OUTPUT
 
-def countdown(x): # count down from x to 0
+def countdown(x): # count down from x to 0 while blinking LED
     print("Starting Countdown...")
     while x > 0:
         print(f"{x} seconds left...")

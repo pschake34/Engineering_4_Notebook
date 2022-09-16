@@ -17,18 +17,20 @@ button.direction = digitalio.Direction.INPUT
 button.pull = digitalio.Pull.UP
 button_prev = button.value
 
-def countdown(x): # count down from x to 0
+def countdown(x): # count down from x to 0 while blinking LED
     print("Starting Countdown...")
     while x > 0:
         print(f"{x} seconds left...")
         x -= 1
+
+        # Turn LED on and off
         led_red.value = True
         time.sleep(.5)
         led_red.value = False
         time.sleep(.5)
-        if button.value:
+        if button.value: # debouncing for button
             button_prev = button.value
-        if not button.value and button_prev:
+        if not button.value and button_prev: # abort countdown
             print("Aborting...")
             led_red.value = False
             led_green.value = False
@@ -38,9 +40,9 @@ def countdown(x): # count down from x to 0
     print("Liftoff!")
 
 while True:
-    if button.value:
+    if button.value: # debouncing button
         button_prev = button.value
-    if not button.value and button_prev:
+    if not button.value and button_prev: # start countdown
         led_green.value = False
         button_prev = button.value
         countdown(10)
