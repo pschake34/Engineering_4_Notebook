@@ -5,16 +5,19 @@ import board
 import time
 import digitalio
 
+# Initialize variables for LEDs
 led_red = digitalio.DigitalInOut(board.GP13)
 led_green = digitalio.DigitalInOut(board.GP18)
 led_red.direction = digitalio.Direction.OUTPUT
 led_green.direction = digitalio.Direction.OUTPUT
+
+# Initialize variables for button
 button = digitalio.DigitalInOut(board.GP16)
 button.direction = digitalio.Direction.INPUT
 button.pull = digitalio.Pull.UP
 button_prev = button.value
 
-def countdown(x):
+def countdown(x): # count down from x to 0
     print("Starting Countdown...")
     while x > 0:
         print(f"{x} seconds left...")

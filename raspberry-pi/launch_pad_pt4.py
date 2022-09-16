@@ -7,20 +7,27 @@ import digitalio
 import pwmio
 from adafruit_motor import servo
 
+# Initialize LED variables
 led_red = digitalio.DigitalInOut(board.GP13)
 led_green = digitalio.DigitalInOut(board.GP18)
 led_red.direction = digitalio.Direction.OUTPUT
 led_green.direction = digitalio.Direction.OUTPUT
+
+# Initialize button variables
 button = digitalio.DigitalInOut(board.GP16)
 button.direction = digitalio.Direction.INPUT
 button.pull = digitalio.Pull.UP
 button_prev = button.value
+
+# Initialize servo variables
 pwm_servo = pwmio.PWMOut(board.GP0, duty_cycle=2 ** 15, frequency=50)
 servo1 = servo.Servo(pwm_servo, min_pulse=500, max_pulse=2500)
 servo1.angle = 0
 
-def countdown(x):
+def countdown(x): # Count down from 10 to zero while blinking an LED - turns servo at 3 seconds
     print("Starting Countdown...")
+
+    # Define some variables for time.monotonic() delays
     BLINK_DURATION = 0.5
     COUNT_DURATION = 1
     LAST_COUNT = time.monotonic() - COUNT_DURATION
@@ -28,6 +35,7 @@ def countdown(x):
     SERVO_CHANGE = 1.23
     button_prev = False
     servo1.angle = 0
+    
     while x >= 0:
         now = time.monotonic()
         if now >= LAST_COUNT + COUNT_DURATION and x > 0:
