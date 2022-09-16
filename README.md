@@ -60,7 +60,7 @@ The second step in the launch pad was to get LEDs blinking during the countdown.
 
 ### Reflection
 
-
+Getting the LEDs to blink was a simple task. The only issue that I ran into was forgetting which LED leg went where. The answer is that the long leg goes to positive because bigger is always better.
 
 <br>
 
@@ -69,13 +69,14 @@ The second step in the launch pad was to get LEDs blinking during the countdown.
 ### Assignment Description
 
 
+
 ### Evidence
 
 <img src="videos/Launch%20Pad/part3.gif" height=500px>
 
 ### Wiring
 
-
+<img src="images/launch_pad_part3.png" height=300px>
 
 ### Code
 
@@ -98,7 +99,7 @@ The second step in the launch pad was to get LEDs blinking during the countdown.
 
 ### Wiring
 
-
+<img src="images/launch_pad_part4.png" height=300px>
 
 ### Code
 
