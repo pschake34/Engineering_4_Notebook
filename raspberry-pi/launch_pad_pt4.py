@@ -38,24 +38,24 @@ def countdown(x): # Count down from 10 to zero while blinking an LED - turns ser
     
     while x >= 0:
         now = time.monotonic()
-        if now >= LAST_COUNT + COUNT_DURATION and x > 0:
+        if now >= LAST_COUNT + COUNT_DURATION and x > 0: # Manage timing for counter, print to serial and turn LED on
             print(f"{x} seconds left...")
             x -= 1
             led_red.value = True
             LAST_COUNT = now
             LAST_BLINK_TIME = now
-        elif now >= LAST_COUNT + COUNT_DURATION and x == 0:
+        elif now >= LAST_COUNT + COUNT_DURATION and x == 0: # Don't print if x == 0 
             x -= 1
-        if led_red.value:
+        if led_red.value: # Turn LED off after short period of time
             if now >= LAST_BLINK_TIME + BLINK_DURATION:
                 led_red.value = False
                 LAST_BLINK_TIME = now
-        if x < 3:
+        if x < 3: # Start moving servo from 0 to 180
             if servo1.angle < 180 - SERVO_CHANGE:
                 servo1.angle += SERVO_CHANGE
-        if button.value:
+        if button.value: # Debounce button
             button_prev = button.value
-        if not button.value and button_prev:
+        if not button.value and button_prev: # Abort launch
             print("Aborting...")
             led_red.value = False
             led_green.value = False
@@ -66,9 +66,9 @@ def countdown(x): # Count down from 10 to zero while blinking an LED - turns ser
     print("Liftoff!")
 
 while True:
-    if button.value:
+    if button.value: # Debounce button
         button_prev = button.value
-    if not button.value and button_prev:
+    if not button.value and button_prev: # Start countdown
         led_green.value = False
         button_prev = button.value
         countdown(10)
