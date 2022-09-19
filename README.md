@@ -68,7 +68,7 @@ Getting the LEDs to blink was a simple task. The only issue that I ran into was 
 
 ### Assignment Description
 
-
+The goal of the third assignment was to make a button start the countdown. If the button was pressed during the countdown it would be cancelled, and if it was pressed again, the countdown would restart.
 
 ### Evidence
 
@@ -84,7 +84,7 @@ Getting the LEDs to blink was a simple task. The only issue that I ran into was 
 
 ### Reflection
 
-
+The hardest part of this assignment was debouncing the button, which I initially forgot to do. I also tried to take the lazy approach to debouncing by using ```time.sleep()```, but I wasn't exactly successful. I eventually had to use another variable to track whether the button had been on so that it wouldn't be triggered multiple times.
 
 <br>
 
@@ -92,6 +92,7 @@ Getting the LEDs to blink was a simple task. The only issue that I ran into was 
 
 ### Assignment Description
 
+The final part of the launchpad assignment was to make a servo actuate at the end of the countdown. The servo had to start moving when there were three seconds left in the countdown, and reach 180 degrees when the countdown reached zero.
 
 ### Evidence
 
@@ -107,6 +108,6 @@ Getting the LEDs to blink was a simple task. The only issue that I ran into was 
 
 ### Reflection
 
-
+The hardest part about getting the servo moving in time with the countdown was changing the timing scheme from ```time.sleep()``` to taking readings from ```time.monotonic()```. Although it was much more complicated, it made multitasking possible, so the servo could move while the LED was blinking without causing any troubles.
 
 <br>
