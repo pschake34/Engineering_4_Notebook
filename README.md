@@ -9,6 +9,10 @@
     - [Part 2](#launch-pad-part-2)
     - [Part 3](#launch-pad-part-3)
     - [Part 4](#launch-pad-part-4)
+* [Crash Avoidance](#crash-avoidance)
+    - [Part 1](#crash-avoidance-part-1)
+    - [Part 2](#crash-avoidance-part-2)
+    - [Part 3](#crash-avoidance-part-3)
 
 <br>
 
@@ -109,5 +113,81 @@ The final part of the launchpad assignment was to make a servo actuate at the en
 ### Reflection
 
 The hardest part about getting the servo moving in time with the countdown was changing the timing scheme from ```time.sleep()``` to taking readings from ```time.monotonic()```. Although it was much more complicated, it made multitasking possible, so the servo could move while the LED was blinking without causing any troubles.
+
+<br>
+
+# Crash Avoidance
+
+
+
+## Crash Avoidance Part 1
+
+### Assignment Description
+
+
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Code
+
+
+
+### Reflection
+
+
+
+<br>
+
+## Crash Avoidance Part 2
+
+### Assignment Description
+
+
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Code
+
+
+
+### Reflection
+
+
+
+<br>
+
+## Crash Avoidance Part 3
+
+### Assignment Description
+
+
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Code
+
+
+
+### Reflection
+
+
 
 <br>
