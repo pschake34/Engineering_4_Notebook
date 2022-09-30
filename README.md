@@ -118,7 +118,7 @@ The hardest part about getting the servo moving in time with the countdown was c
 
 # Crash Avoidance
 
-
+You are in a helicopter, living your best life. 
 
 ## Crash Avoidance Part 1
 
@@ -132,11 +132,11 @@ The hardest part about getting the servo moving in time with the countdown was c
 
 ### Wiring
 
-
+<img src="images/crash_avoidance_part1.png" height=300px>
 
 ### Code
 
-
+[Link to code](/raspberry-pi/crash_avoidance_pt1.py)
 
 ### Reflection
 
@@ -156,11 +156,11 @@ The hardest part about getting the servo moving in time with the countdown was c
 
 ### Wiring
 
-
+<img src="images/crash_avoidance_part2.png" height=300px>
 
 ### Code
 
-
+[Link to code](/raspberry-pi/crash_avoidance_pt1.py)
 
 ### Reflection
 
@@ -180,11 +180,11 @@ The hardest part about getting the servo moving in time with the countdown was c
 
 ### Wiring
 
-
+<img src="images/crash_avoidance_part3.png" height=300px>
 
 ### Code
 
-
+[Link to code](/raspberry-pi/crash_avoidance_pt1.py)
 
 ### Reflection
 
