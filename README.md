@@ -118,17 +118,17 @@ The hardest part about getting the servo moving in time with the countdown was c
 
 # Crash Avoidance
 
-You are in a helicopter, living your best life. 
+You are in a helicopter, and you have no idea if you're going to crash. You need to not.
 
 ## Crash Avoidance Part 1
 
 ### Assignment Description
 
-
+The first part of the assignment was to wire up an accelerometer to read x, y, and z acceleration.
 
 ### Evidence
 
-
+<img src="videos/Crash%20Avoidance/part1.gif" height=500px>
 
 ### Wiring
 
@@ -140,7 +140,7 @@ You are in a helicopter, living your best life.
 
 ### Reflection
 
-
+I didn't run into any issues, but 
 
 <br>
 
@@ -152,7 +152,7 @@ You are in a helicopter, living your best life.
 
 ### Evidence
 
-
+<img src="videos/Crash%20Avoidance/part2.gif" height=500px>
 
 ### Wiring
 
@@ -176,7 +176,7 @@ You are in a helicopter, living your best life.
 
 ### Evidence
 
-
+<img src="videos/Crash%20Avoidance/part3.gif" height=300px>
 
 ### Wiring
 
