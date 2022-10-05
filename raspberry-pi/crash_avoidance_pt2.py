@@ -7,6 +7,7 @@ import adafruit_mpu6050
 import digitalio
 import time
 
+# Initialize accelerometer
 sda_pin = board.GP14
 scl_pin = board.GP15
 i2c = busio.I2C(scl_pin, sda_pin)
@@ -22,7 +23,7 @@ while True:
     z = round(mpu.acceleration[2], 3)
     time.sleep(0.2)
     print(f"x: {x} y: {y} z: {z}")
-    if z > -3 and z < -1:
+    if z > -3 and z < -1: # If accelerometer is perpendicular to ground
         led.value = True
     else:
         led.value = False
