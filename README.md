@@ -140,7 +140,7 @@ The first part of the assignment was to wire up an accelerometer to read x, y, a
 
 ### Reflection
 
-I didn't run into any issues, but 
+I didn't run into any issues, and because of my excellent programming, neither did the theoretical helicopter. One handy tool that I used in the assignment was the ```round()``` function. This function does exactly what it says - rounding the first number put into it to the number of digits of the second number put into it. For example ```round(15.2728, 2)``` would produce ```15.27```. 
 
 <br>
 
@@ -148,7 +148,7 @@ I didn't run into any issues, but
 
 ### Assignment Description
 
-
+After successfully setting up an accelerometer, the next step was to use those acceleration values to trigger a warning light if the helicopter is tilted at 90 degrees. Additionally, a battery will set up your RPi Pico to run “headless” (not attached to a computer).
 
 ### Evidence
 
@@ -164,7 +164,7 @@ I didn't run into any issues, but
 
 ### Reflection
 
-
+The hardest part of this assignment was figuring out the values for when the accelerometer was perpendicular to the ground. It was mostly trial and error. Cheers.
 
 <br>
 
@@ -172,7 +172,7 @@ I didn't run into any issues, but
 
 ### Assignment Description
 
-
+After successfully setting up an accelerometer and making your device mobile. The next step is to add an onboard OLED screen to print live angular velocity values.
 
 ### Evidence
 
@@ -188,6 +188,6 @@ I didn't run into any issues, but
 
 ### Reflection
 
-
+I ran into some issues with a broken OLED screen, which were quickly resolved with I found a funcioning OLED screen. Additionally, there were some problems with I2C communication. I tried to have two I2C devices on 2 different sets of SDA and SCL pins, which caused some problems. This was fixed by using the same 2 SDA and SCL pins for the different devices.
 
 <br>
