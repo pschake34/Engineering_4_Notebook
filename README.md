@@ -160,7 +160,7 @@ After successfully setting up an accelerometer, the next step was to use those a
 
 ### Code
 
-[Link to code](/raspberry-pi/crash_avoidance_pt1.py)
+[Link to code](/raspberry-pi/crash_avoidance_pt2.py)
 
 ### Reflection
 
@@ -184,7 +184,7 @@ After successfully setting up an accelerometer and making your device mobile. Th
 
 ### Code
 
-[Link to code](/raspberry-pi/crash_avoidance_pt1.py)
+[Link to code](/raspberry-pi/crash_avoidance_pt3.py)
 
 ### Reflection
 
