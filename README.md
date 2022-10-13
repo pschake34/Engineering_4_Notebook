@@ -242,11 +242,11 @@ I had to relearn how to use the [split function](https://www.w3schools.com/pytho
 
 ### Code
 
-
+[Link to code](/raspberry-pi/landing_area_pt1.py)
 
 ### Reflection
 
-
+The hardest part of graphing the triangle was that the input coordinates had to be translated to the coordinate system of the OLED screen. The OLED screen starts the x and y at 0 in the top left corner - increasing in number going to the right and down. To translate these coordinates so that the origin is in the center, I had to add 64 to the x, and add 32 to *negative* y so that y decreases as it goes down.
 
 <br>
 
