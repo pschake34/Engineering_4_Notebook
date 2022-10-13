@@ -13,6 +13,12 @@
     - [Part 1](#crash-avoidance-part-1)
     - [Part 2](#crash-avoidance-part-2)
     - [Part 3](#crash-avoidance-part-3)
+* [Landing Area](#landing-area)
+    - [Part 1](#landing-area-part-1)
+    - [Part 2](#landing-area-part-2)
+* [Morse Code](#morse-code)
+    - [Part 1](#morse-code-part-1)
+    - [Part 2](#morse-code-part-2)
 
 <br>
 
@@ -189,5 +195,105 @@ After successfully setting up an accelerometer and making your device mobile. Th
 ### Reflection
 
 I ran into some issues with a broken OLED screen, which were quickly resolved with I found a funcioning OLED screen. Additionally, there were some problems with I2C communication. I tried to have two I2C devices on 2 different sets of SDA and SCL pins, which caused some problems. This was fixed by using the same 2 SDA and SCL pins for the different devices.
+
+<br>
+
+# Landing Area
+
+NASA is preparing to send a mission to replace the equipment that was damaged in the solar flare. The landing areas need to be large, as the equipment will deorbit and tumble to a stop. The helicopter will be utilized to scout potential landing sites for the recovery mission. The helicopter seeks out open areas of land in triangular shapes, and it is up to your team to determine the best landing site. Your base commander has asked you to code an automated system to determine the best landing site from sets of three coordinates. 
+
+## Landing Area Part 1
+
+### Assignment Description
+
+Write a script that takes three coordinates and returns the area using a function (see detailed list of requirements below).
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Code
+
+[Link to code](/raspberry-pi/landing_area_pt1.py)
+
+### Reflection
+
+I had to relearn how to use the [split function](https://www.w3schools.com/python/ref_string_split.asp). By default, it splits a string into words with a space indicating the start of a word. However, you can specify the seperation character so I used it to split the coordinate inputs by setting the character to ```','```.
+
+<br>
+
+## Landing Area Part 2
+
+### Assignment Description
+
+
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Code
+
+
+
+### Reflection
+
+
+
+<br>
+
+## Morse Code Part 1
+
+### Assignment Description
+
+
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Code
+
+
+
+### Reflection
+
+
+
+<br>
+
+## Morse Code Part 2
+
+### Assignment Description
+
+
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Code
+
+
+
+### Reflection
+
+
 
 <br>
