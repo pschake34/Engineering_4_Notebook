@@ -214,7 +214,7 @@ Write a script that takes three coordinates and returns the area using a functio
 
 ### Wiring
 
-
+N/A
 
 ### Code
 
@@ -238,11 +238,11 @@ I had to relearn how to use the [split function](https://www.w3schools.com/pytho
 
 ### Wiring
 
-
+<img src="images/landing_area_part2.png" height=300px>
 
 ### Code
 
-[Link to code](/raspberry-pi/landing_area_pt1.py)
+[Link to code](/raspberry-pi/landing_area_pt2.py)
 
 ### Reflection
 
@@ -254,7 +254,7 @@ The hardest part of graphing the triangle was that the input coordinates had to 
 
 ### Assignment Description
 
-
+Write a morse code translator (see the introduction page for more info on morse code). This piece of code will translate text from the user into a set of dots and dashes. Print those dots and dashes to the serial monitor.
 
 ### Evidence
 
@@ -262,15 +262,15 @@ The hardest part of graphing the triangle was that the input coordinates had to 
 
 ### Wiring
 
-
+N/A
 
 ### Code
 
-
+[Link to code](/raspberry-pi/morse_code_pt1.py)
 
 ### Reflection
 
-
+This was the first time in this class that we used a dictionary in an assignment. [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp) are a very good way to store relationships between pieces of data. In this assignment, a dictionary was used to quickly and easily translate characters to morse code.
 
 <br>
 
