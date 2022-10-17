@@ -230,7 +230,7 @@ I had to relearn how to use the [split function](https://www.w3schools.com/pytho
 
 ### Assignment Description
 
-
+You have successfully written a script to calculate and return the area of each triangle. Now, your commander has asked that you include a small OLED screen to improve visualization of where the landing area is relative to the base.
 
 ### Evidence
 
@@ -278,7 +278,7 @@ This was the first time in this class that we used a dictionary in an assignment
 
 ### Assignment Description
 
-
+Now that you have a script that translates English into Morse Code, let’s add to it! You need to have your Pico flash out your Morse Code message using an LED.
 
 ### Evidence
 
@@ -286,14 +286,14 @@ This was the first time in this class that we used a dictionary in an assignment
 
 ### Wiring
 
-
+<img src="images/morse_code_part2.png" height=300px>
 
 ### Code
 
-
+[Link to code](/raspberry-pi/morse_code_pt2.py)
 
 ### Reflection
 
-
+Wow! Making an LED blink! How sophisticated and difficult! In all seriousness I didn't really have any problems other than needing to find the [morse code](https://morsecode.world/international/morse.html) values for punctuation.
 
 <br>
