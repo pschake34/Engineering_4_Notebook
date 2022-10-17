@@ -1,5 +1,5 @@
 # Paul Schakel
-# Morse Code Part 1
+# Morse Code Part 2
 
 import board
 import digitalio
@@ -32,7 +32,7 @@ MORSE_CODE = { 'A':'.-', 'B':'-...',
     '7':'--...', '8':'---..', '9':'----.',
     '0':'-----', ', ':'--..--', '.':'.-.-.-',
     '?':'..--..', '/':'-..-.', '-':'-....-',
-    '(':'-.--.', ')':'-.--.-'}
+    '(':'-.--.', ')':'-.--.-', '\'': '.----.', '!':'-.-.--'}
 
 while True:
     to_translate = input("Enter the phrase you would like translated: ")
