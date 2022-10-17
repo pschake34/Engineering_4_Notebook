@@ -47,19 +47,19 @@ while True:
     print(translated + "\n\n")
 
     for char in translated: # Flash LED to transmit morse code message
-        if char == ".":
+        if char == ".": # Blink short
             led.value = True
             time.sleep(dot_time)
             led.value = False
             time.sleep(between_taps)
-        elif char == "-":
+        elif char == "-": # Blink long
             led.value = True
             time.sleep(dash_time)
             led.value = False
             time.sleep(between_taps)
-        elif char == " ":
+        elif char == " ": # turn off for a while
             time.sleep(between_letters)
-        elif char == "/":
+        elif char == "/": # turn off for a long time
             time.sleep(between_words - between_letters)
-        else:
+        else: # this code should never be run but here it is
             print("Error")
