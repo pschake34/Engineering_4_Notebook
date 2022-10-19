@@ -210,7 +210,7 @@ Write a script that takes three coordinates and returns the area using a functio
 
 ### Evidence
 
-
+<img src="videos/Landing%20Area/part1.gif" height=300px>
 
 ### Wiring
 
@@ -234,7 +234,7 @@ You have successfully written a script to calculate and return the area of each 
 
 ### Evidence
 
-
+<img src="videos/Landing%20Area/part2.gif" height=300px>
 
 ### Wiring
 
@@ -258,7 +258,7 @@ Write a morse code translator (see the introduction page for more info on morse 
 
 ### Evidence
 
-
+<img src="videos/Morse%20Code/part1.gif" height=300px>
 
 ### Wiring
 
@@ -282,7 +282,7 @@ Now that you have a script that translates English into Morse Code, let’s add 
 
 ### Evidence
 
-
+<img src="videos/Morse%20Code/part2.gif" height=300px>
 
 ### Wiring
 
