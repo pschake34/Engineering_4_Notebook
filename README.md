@@ -19,6 +19,14 @@
 * [Morse Code](#morse-code)
     - [Part 1](#morse-code-part-1)
     - [Part 2](#morse-code-part-2)
+* [Pull Copter](#pull-copter)    
+    - [Part 1 - Ring and Spinner](#ring-and-spinner)
+    - [Part 2 - Key and Prop](#key-and-prop)
+    - [Part 3 - Assembly](#assembly)
+* [Finite Element Analysis](#finite-element-analysis)
+    - [Part 1](#FEA-part-1)
+    - [Part 2](#FEA-part-2)
+    - [Part 3](#FEA-part-3)
 
 <br>
 
@@ -250,6 +258,8 @@ The hardest part of graphing the triangle was that the input coordinates had to 
 
 <br>
 
+# Morse Code
+
 ## Morse Code Part 1
 
 ### Assignment Description
@@ -297,3 +307,24 @@ Now that you have a script that translates English into Morse Code, let’s add 
 Wow! Making an LED blink! How sophisticated and difficult! In all seriousness I didn't really have any problems other than needing to find the [morse code](https://morsecode.world/international/morse.html) values for punctuation.
 
 <br>
+
+# Pull Copter
+
+## Ring and Spinner
+
+### Assignment Description
+
+This assignment was a collaboration between two students (thanks [Em](https://github.com/hheisig51)), with each student creating half of the parts. In the first part, Student A created the top, and Student B created the spinner. 
+
+### Part Link 
+
+[Onshape document](https://cvilleschools.onshape.com/documents/42937f422f88d8bb3d6f1868/w/4a524ad086e734c682d1f232/e/8a1a2adf66bb568d7e1749f7?renderMode=0&uiState=6373b0ea18c6542b9472d154)
+
+### Part Image
+
+<img src="images/top.jpeg" height=300px>
+<img src="images/spinner.jpeg" height=300px>
+
+### Reflection
+
+TODO
