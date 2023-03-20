@@ -314,7 +314,7 @@ Wow! Making an LED blink! How sophisticated and difficult! In all seriousness I 
 
 ### Assignment Description
 
-This assignment was a collaboration between two students (thanks [Em](https://github.com/hheisig51)), with each student creating half of the parts. In the first part, Student A created the top, and Student B created the spinner. 
+This assignment was a collaboration between two students (thanks [Em](https://github.com/hheisig51)), with each student creating half of the parts. In the first part, Student A created the ring, and Student B created the spinner. 
 
 ### Part Link 
 
@@ -327,4 +327,47 @@ This assignment was a collaboration between two students (thanks [Em](https://gi
 
 ### Reflection
 
-TODO
+I was Student A, so I made the ring. It was fairly straightforward to build thanks to the excellent guide from Onshape. 
+
+<br>
+
+## Key and Prop
+
+### Assignment Description
+
+This assignment was a collaboration between two students (thanks [Em](https://github.com/hheisig51)), with each student creating half of the parts. In this second part, Student A created the key, and Student B created the prop. 
+
+### Part Link 
+
+[Onshape document](https://cvilleschools.onshape.com/documents/42937f422f88d8bb3d6f1868/w/4a524ad086e734c682d1f232/e/8a1a2adf66bb568d7e1749f7?renderMode=0&uiState=6373b0ea18c6542b9472d154)
+
+### Part Image
+
+<img src="images/key.jpeg" height=300px>
+<img src="images/prop.jpeg" height=300px>
+
+### Reflection
+
+I was Student A, so I made the key. I used a linear pattern to make the notches in the key.
+
+<br>
+
+## Assembly
+
+### Assignment Description
+
+This assignment was a collaboration between two students (thanks [Em](https://github.com/hheisig51)), with each student creating half of the parts. In this second part, Student A created the key, and Student B created the prop. 
+
+### Part Link 
+
+[Onshape document](https://cvilleschools.onshape.com/documents/42937f422f88d8bb3d6f1868/w/4a524ad086e734c682d1f232/e/8a1a2adf66bb568d7e1749f7?renderMode=0&uiState=6373b0ea18c6542b9472d154)
+
+### Part Image
+
+<img src="images/top.jpeg" height=300px>
+<img src="images/spinner.jpeg" height=300px>
+
+### Reflection
+
+I was Student A, so I made the key. I used a linear pattern to make the notches in the key.
+
