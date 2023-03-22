@@ -343,8 +343,8 @@ This assignment was a collaboration between two students (thanks [Em](https://gi
 
 ### Part Image
 
-<img src="images/key.jpeg" height=300px>
-<img src="images/prop.jpeg" height=300px>
+<img src="images/key.jpg" height=300px width=400px>
+<img src="images/prop.jpg" height=300px width=260px>
 
 ### Reflection
 
@@ -356,7 +356,7 @@ I was Student A, so I made the key. I used a linear pattern to make the notches 
 
 ### Assignment Description
 
-This assignment was a collaboration between two students (thanks [Em](https://github.com/hheisig51)), with each student creating half of the parts. In this second part, Student A created the key, and Student B created the prop. 
+This assignment was a collaboration between two students (thanks [Em](https://github.com/hheisig51)), with each student creating half of the parts. In the final part, Students A and B put their parts together in the final assembly. 
 
 ### Part Link 
 
@@ -364,10 +364,75 @@ This assignment was a collaboration between two students (thanks [Em](https://gi
 
 ### Part Image
 
-<img src="images/top.jpeg" height=300px>
-<img src="images/spinner.jpeg" height=300px>
+<img src="images/assembly.jpg" height=300px>
 
 ### Reflection
 
-I was Student A, so I made the key. I used a linear pattern to make the notches in the key.
+As Student A, I added my parts to the assembly. Putting together all the mates and relationships was very easy thanks to the helpful instructions from Onshape. 
+
+<br>
+
+## FEA Part 1
+
+### Assignment Description
+
+The goal of this assignment was to design a 3D printed beam in Onshape with the goal of maximizing the weight the beam can hold before failure. The beam would fail if either of the following two conditions were met:
+
+- The beam broke
+- The beam bent more than 35 mm
+
+### Link
+
+[Onshape document](https://cvilleschools.onshape.com/documents/4bf6c8f9b60ee155604a033f/w/7fe6f621454feda3486d13b0/e/38cb87d851f36da348c64aae)
+
+### Image 
+
+<img src="images/beam_first_design.jpeg" height=300px>
+
+### Reflection
+
+Our main design decision was to have a sort of support attaching the underside of the beam to the vertical block. In order to fit in the design constraints, we had to flip this portion upside down so that the beam would print without support. In order to fit within the weight constraints, we had to make the beam very skinny, which made the hole situation for the weight less than ideal. The underneath support idea wasn't the best fit for the constraints of the project, as it wasn't able to really be effective without completely overstepping the guidelines.
+
+<br>
+
+## FEA Part 2
+
+### Assignment Description
+
+The goal of the second FEA assignment was to run one static finite element analysis on the beam we had created to determine what areas need to be improved.
+
+### Link
+
+[Onshape document](https://cvilleschools.onshape.com/documents/4bf6c8f9b60ee155604a033f/w/7fe6f621454feda3486d13b0/e/38cb87d851f36da348c64aae)
+
+### Image 
+
+<img src="images/FEA_force_plot.jpeg" height=300px>
+<img src="images/FEA_displacement_plot.jpeg" height=300px>
+
+### Reflection
+
+The design we created was not very good. It would fail pretty easily where it's attached to the block. Unfortunately, efforts to reinforce area to an extent in our design were unsuccessful. Time for a redesign.
+
+<br>
+
+## FEA Part 3
+
+### Assignment Description
+
+In the last part of the FEA assignment, the goal was to redesign the beam using the data collected, and to improve the maximum wewight the beam could hold before meeting one of the two failure conditions.
+
+### Link
+
+[Onshape document](https://cvilleschools.onshape.com/documents/4bf6c8f9b60ee155604a033f/w/7fe6f621454feda3486d13b0/e/38cb87d851f36da348c64aae)
+
+### Image 
+
+<img src="images/beam_better_design.jpeg" height=300px>
+
+### Reflection
+
+We completely redid the design of the original beam. Instead of having a solid beam with attempts at supporting the base, we shifted to having a sort of H beam with the horizontal piece shifted down, so it looked like a U. This was a much more effective design, and as we made iterations on it to shift and spread out the stress on the beam. This improved the displacement by 125% and stress by 6.36%.
+
+<br>
 
