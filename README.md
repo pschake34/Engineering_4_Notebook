@@ -372,6 +372,8 @@ As Student A, I added my parts to the assembly. Putting together all the mates a
 
 <br>
 
+# Finite Element Analysis
+
 ## FEA Part 1
 
 ### Assignment Description
